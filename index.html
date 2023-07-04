@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>StudentMangement</title>
+</head>
+<body>
+   <div class="heading">
+    <h1>Student Mangement CRUD</h1>
+   </div>
+
+    <div class="add-box">
+        
+        <div class="input-boxes">
+
+            <div class="name-box">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Name">
+            </div>
+
+            <div class="email-box">
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="Email">
+            </div>
+
+            <div class="gpa-box">
+                <label for="gpa"></label>
+                <input type="text" id="gpa" placeholder="GPA">
+            </div>
+
+            <div class="age-box">
+                <label for="age"></label>
+                <input type="number" id="age" placeholder="Age">
+            </div>
+
+            <div class="degree-box">
+                <label for="degree"></label>
+                <input type="text" id="degree" placeholder="Degree">
+            </div>
+
+        </div>
+        <button type="submit" id="form-btn">Add Student</button>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search by name, email or degree">
+    </div>
+
+    <div class="display-box">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
